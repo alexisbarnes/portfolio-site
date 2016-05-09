@@ -7,6 +7,13 @@
     "Info":"This project required the use of Google, Twitter and Instagram APIs. The subject of this project is Beyonce's Formation World Tour. The purpose is to map out the tour route and allow users to find a location near them. Also, it shows what other fans are tweeting about her album and tour."
   },
   {
+    "Title":"Undercurrent 360",
+    "Type:":"web",
+    "Link":"http://undercurrent360.com/",
+    "Img:":"imgs/undercurrent360.png",
+    "Info":"I was a web developer for a international multimedia documentary class. I developed the graphic for the story \"The Watchman\" and helped the website developers with the about page."
+  },
+  {
     "Title":"CSS Dashboard",
     "Type":"web",
     "Link":"/586/project_1",

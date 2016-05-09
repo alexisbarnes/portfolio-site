@@ -28,6 +28,16 @@ a:hover {
 
 
 /*--DESKTOP MENU--*/
+.main-header {
+  margin: 0 0 50px 0;
+}
+
+.navbar-brand>img {
+  width: 120px;
+  max-height: 280px;
+  padding: 0 0 0 20px;
+}
+
 .nav {
   text-align: center;
 }
@@ -80,6 +90,36 @@ li.mobile-li {
 .nav>li>a:focus, .nav>li>a:hover {
     text-decoration: none;
     background-color: none;
+}
+
+/*----HOME PAGE---*/
+.logo-img {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.home-txt {
+  font-size: 16px;
+}
+
+.twitter-icon {
+  max-width: 100px;
+  margin: 15px;
+}
+
+.linkedin-icon {
+  max-width: 100px;
+  margin: 15px;
+}
+
+.instagram-icon {
+  max-width: 100px;
+  margin: 15px;
+}
+
+.github-icon {
+  max-width: 100px;
+  margin: 15px;
 }
 
 /*---PORTFOLIO ITEMS---*/
@@ -160,7 +200,7 @@ li.mobile-li {
 }
 
 .caption:hover::before {
-  background: rgba(0,0,0,.5);
+  background: rgba(0,0,0,.8);
 }
 
 .caption {
@@ -172,4 +212,50 @@ li.mobile-li {
   font-size: 16px;
 }
 .my-bio {
+}
+
+/*----FOOTER---*/
+footer {
+  height: 70px;
+  background-color: #A64474;
+  margin: 30px 0 0 0;
+  z-index: 0;
+}
+
+.social-media-icons-footer {
+  float: right;
+}
+
+.twitter-icon-footer {
+  max-width: 40px;
+  margin: 15px 10px 5px 5px;
+  z-index: 100;
+}
+
+.linkedin-icon-footer {
+  max-width: 40px;
+  margin: 15px 10px 5px 5px;
+  z-index: 100;
+}
+
+.instagram-icon-footer {
+  max-width: 40px;
+  margin: 15px 10px 5px 5px;
+  z-index: 100;
+}
+
+.github-icon-footer {
+  max-width: 40px;
+  margin: 15px 10px 5px 5px;
+  z-index: 100;
+}
+
+
+
+/*----MEDIA QUERIES---*/
+@media screen and (max-width: 814px) {
+  li {
+    display: inline-block !important;
+    margin: 20px;
+  }
 }
