@@ -1,0 +1,30 @@
+[
+  {
+    "Title":"API Project",
+    "Type":"web",
+    "Link":"/586/final_project",
+    "Img":"imgs/apiproject.png",
+    "Info":"This project required the use of Google, Twitter and Instagram APIs. The subject of this project is Beyonce's Formation World Tour. The purpose is to map out the tour route and allow users to find a location near them. Also, it shows what other fans are tweeting about her album and tour."
+  },
+  {
+    "Title":"CSS Dashboard",
+    "Type":"web",
+    "Link":"/586/project_1",
+    "Img":"imgs/cssdashboard.png",
+    "Info":"This css dashboard was the first project for intermediate interactive media. This project was created to help advance everyone's css skills."
+  },
+  {
+    "Title":"Data App",
+    "Type":"web",
+    "Link":"/586/project_3",
+    "Img":"imgs/dataapp.png",
+    "Info":"The purpose of the third project in intermediate interactive media was to teach how to find and clean up data and display it cleanly, using Highcharts. The assignment also required that it should mimic a publication in terms of style (text, colors, layout, etc)."
+  },
+  {
+    "Title":"Wabi Sabi",
+    "Type":"web",
+    "Link":"/magazine",
+    "Img":"imgs/wabisabi.png",
+    "Info":"The goal of this project was to take a print magazine and turn it into a website. I had to create my own WordPress theme for this site."
+  }
+]

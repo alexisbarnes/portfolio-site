@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alexis Barnes | Videos</title>
+
+    <!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--FONT-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <header>
+    <!--DESKTOP MENU-->
+    <div class="hidden-xs">
+      <ul class="nav">
+        <li><a href="index.html" class="menu-link">HOME</a></li>
+        <li><a href="about.html" class="menu-link">ABOUT</a></li>
+        <li><a href="web.html" class="menu-link">WEB</a></li>
+        <li class="active"><a href="video.html" class="menu-link">VIDEOS</a></li>
+        <li><a href="resume.html" class="menu-link">RESUM&Eacute;</a></li>
+      </ul>
+    </div>
+
+    <!--MOBILE MENU-->
+    <nav class="navbar navbar-inverse navbar-static-top visible-xs" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="mobile-li"><a href="index.html" class="mobile-link">HOME</a></li>
+                <li class="mobile-li"><a href="about.html" class="mobile-link">ABOUT</a></li>
+                <li class="mobile-li"><a href="web.html" class="mobile-link">WEB</a></li>
+                <li class="mobile-li"><a href="videos.html" class="mobile-link">VIDEOS</a></li>
+                <li class="mobile-li"><a href="resume.html" class="mobile-link">RESUM&Eacute;</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  </header>
+
+  <body>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h1 class="page-header">VIDEO PROJECTS</h1>
+      </div>
+    </div>
+
+    <div id="container">
+      <div id="video-folioItems" class="portfolio"></div>
+    </div>
+
+    <!--JS-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        var video = "";
+
+        jQuery.ajax({
+          type: "GET",
+          url: "json/videos.json",
+          dataType: "json",
+          success: buildVidFolio
+        });
+
+        function buildVidFolio(vidFolio) {
+
+          $.each(vidFolio,function(i,vidItem){
+            var i = 1;
+            video += '<div class="mix"><article class="caption"><a target= "_blank" href="' + vidItem.Link +'"><img class="caption-media" src="' + vidItem.Img + '" /><div class="caption-overlay"><h1 class="caption-overlay-title">' + vidItem.Title + '</h1><p class="overlay-content">' + vidItem.Info + '</p></div></a></article></div>';
+
+          });
+
+          $('#video-folioItems').append(video);
+        }
+      });
+
+    </script>
+  </body>
+
+
+</html>

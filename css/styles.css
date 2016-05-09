@@ -1,0 +1,175 @@
+/*--GLOBAL STYLES--*/
+body {
+  background-color: #160D03;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  color: #A64474;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #D9C7A8;
+}
+
+a {
+  color: #D9C7A8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #94BE90;
+}
+
+
+/*--DESKTOP MENU--*/
+.nav {
+  text-align: center;
+}
+
+li {
+  display: inline-block !important;
+  margin: 30px;
+}
+
+/*.nav>li>a:focus, .nav>li>a:hover {
+    background-color: none !important;
+}*/
+
+li.active > a {
+    border-bottom: 2px solid #A64474;
+    padding: 10px 0 5px 0;
+}
+
+.menu-link {
+  color: #D9C7A8;
+}
+
+
+/*--MOBILE MENU--*/
+.navbar-header {
+  background-color: #A64474;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #a64474;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #a64474;
+    background-color: #160D03;
+}
+
+li.mobile-li {
+  display: block !important;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #D9C7A8;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #94BE90;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: none;
+}
+
+/*---PORTFOLIO ITEMS---*/
+#container {
+  margin: 0 0 0 80px;
+}
+
+.portfolio {
+  margin: 50px 0 0 0;
+}
+
+.mix {
+  height: 200px;
+  width: 300px;
+  background-color: #94BE90;
+  margin: 20px 20px 20px 20px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.caption {
+  position: relative;
+  overflow: hidden;
+}
+
+.caption-media {
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.caption-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  color: #fff;
+  transform: translateY(100%);
+  transition: transform .35s ease-out;
+}
+
+.caption:hover .caption-overlay {
+  transform: translateY(0);
+}
+
+.caption-overlay-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #D61913;
+  margin: 0;
+  padding: 0 0 12px;
+  transform: translateY( calc(-100% - 10px) );
+  transition: transform .35s ease-out;
+}
+
+.overlay-content {
+  font-size: 14px;
+  color: #D9C7A8;
+}
+
+.caption:hover .caption-overlay-title {
+  transform: translateY(0);
+}
+
+.caption::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  transition: background .35s ease-out;
+}
+
+.caption:hover::before {
+  background: rgba(0,0,0,.5);
+}
+
+.caption {
+  transform: translateZ(0);
+}
+
+/*----ABOUT BIO---*/
+.bio {
+  font-size: 16px;
+}
+.my-bio {
+}
