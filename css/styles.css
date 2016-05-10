@@ -326,6 +326,10 @@ footer {
   z-index: 0;
 }
 
+/*.copyright {
+  margin: 25px;
+}*/
+
 .social-media-icons-footer {
   float: right;
   margin: 0 20px 0 0;
@@ -358,12 +362,20 @@ footer {
 
 
 /*----MEDIA QUERIES---*/
-@media screen and (max-width: 814px) {
+@media screen and (max-width: 889px) {
   li {
     display: inline-block !important;
     margin: 20px;
   }
 }
+
+@media screen and (max-width: 789px) {
+  li {
+    display: inline-block !important;
+    margin: 15px;
+  }
+}
+
 
 @media screen and (max-width: 400px) {
   #container {
@@ -375,4 +387,16 @@ footer {
     margin: 0;
     text-align: center;
   }
+
+  /*footer {
+    height: 150px;
+    background-color: #A64474;
+    margin: 30px 0 0 0;
+    z-index: 0;
+  }*/
+
+  /*.copyright {
+    margin: 25px 0 5px 0;
+    text-align: center;
+}*/
 }
