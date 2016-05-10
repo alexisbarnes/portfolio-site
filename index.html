@@ -97,7 +97,73 @@
           </div> -->
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="page-header"><a href="web.html">WEB/GRAPHIC PROJECTS &#8594;</a></h1>
+        </div>
+      </div>
+
+      <div id="container">
+        <div id="homeweb-folioItems" class="portfolio"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="page-header"><a href="videos.html">VIDEO PROJECTS &#8594;</a></h1>
+        </div>
+      </div>
+
+      <div id="container">
+        <div id="homevideo-folioItems" class="portfolio"></div>
+      </div>
+
+      <script src="js/jquery.mixitup.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          var web = "";
+          var vid = "";
+
+          jQuery.ajax({
+            type: "GET",
+            url: "json/homeweb.json",
+            dataType: "json",
+            success: buildWebFolio
+          });
+
+
+          jQuery.ajax({
+            type: "GET",
+            url: "json/homevideo.json",
+            dataType: "json",
+            success: buildVideoFolio
+          });
+
+          function buildWebFolio(webFolio) {
+            $.each(webFolio,function(i,webItem){
+              var i = 1;
+              web += '<div class="mix"><article class="caption"><a target= "_blank" href="' + webItem.Link +'"><img class="caption-media" src="' + webItem.Img + '" /><div class="caption-overlay"><h1 class="caption-overlay-title">' + webItem.Title + '</h1><p class="overlay-content">' + webItem.Info + '</p></div></a></article></div>';
+            });
+            $('#homeweb-folioItems').append(web);
+          }
+
+          function buildVideoFolio(videoFolio) {
+            $.each(videoFolio,function(i,videoItem){
+              var i = 1;
+              vid += '<div class="mix"><article class="caption"><a target= "_blank" href="' + videoItem.Link +'"><img class="caption-media" src="' + videoItem.Img + '" /><div class="caption-overlay"><h1 class="caption-overlay-title">' + videoItem.Title + '</h1><p class="overlay-content">' + videoItem.Info + '</p></div></a></article></div>';
+            });
+            $('#homevideo-folioItems').append(vid);
+          }
+        });
+
+        $(function(){
+          $('#container').mixItUp();
+        })
+      </script>
+
     </div>
+
+
 
     <!--JS-->
     <script src="js/bootstrap.min.js"></script>

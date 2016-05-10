@@ -1,0 +1,23 @@
+[
+  {
+    "Title":"Graphic Design Portfolio",
+    "Type":"graphic",
+    "Link":"../assests/design-portfolio.pdf",
+    "Img":"imgs/designportfolio.png",
+    "Info":"For my graphic design class, I had to make a portfolio that told a story and incorporated all my projects throughout the semester."
+  },
+  {
+    "Title":"API Project",
+    "Type":"web",
+    "Link":"/586/final_project",
+    "Img":"imgs/apiproject.png",
+    "Info":"This project required the use of Google, Twitter and Instagram APIs. The subject of this project is Beyonce's Formation World Tour. The purpose is to map out the tour route and allow users to find a location near them. Also, it shows what other fans are tweeting about her album and tour."
+  },
+  {
+    "Title":"Undercurrent 360",
+    "Type:":"web",
+    "Link":"https://undercurrent360.com",
+    "Img":"imgs/undercurrentsite.png",
+    "Info":"I was a web developer for a international multimedia documentary class. I developed the graphic for the story \"The Watchman\" and helped the website developers with the about page."
+  }
+]

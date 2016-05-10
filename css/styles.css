@@ -10,6 +10,7 @@ h1 {
 
 h2 {
   font-family: 'Open Sans', sans-serif;
+  color: #94BE90;
 }
 
 p {
@@ -154,6 +155,10 @@ li.mobile-li {
 
 .home-bio a:hover {
   color: #94BE90;
+  text-decoration: none;
+}
+
+.page-header a:hover {
   text-decoration: none;
 }
 
