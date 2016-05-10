@@ -1,5 +1,12 @@
 [
   {
+    "Title":"Graphic Design Portfolio",
+    "Type":"graphic",
+    "Link":"../assests/design-portfolio.pdf",
+    "Img":"imgs/designportfolio.png",
+    "Info":"For my graphic design class, I had to make a portfolio that told a story and incorporated all my projects throughout the semester."
+  },
+  {
     "Title":"API Project",
     "Type":"web",
     "Link":"/586/final_project",
